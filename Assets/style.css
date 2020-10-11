@@ -1,0 +1,280 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+a 
+
+#intro {
+  color:#FFB673;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+#iamintro {
+  color:#FFB673;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.card {
+  background-color:#FFB673;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card:hover, .bcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+
+.bcard {
+  background-color:#666666;
+  padding:0px;
+  transition: 0.3s;
+  width:100%;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.overlay{
+    background:rgba(0,0,0,.5);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    width:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    left:0;
+    z-index:10000;
+}
+.overlay .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.overlay > div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    min-width: 300px;
+    max-width: 800px;
+    min-height: 150px;
+    max-height: 500px;
+    height: auto;
+    position: relative;
+    vertical-align: middle;
+    text-align: left;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+
+.xbutton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 25px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.xbutton:hover {
+    background-color: #ccc;
+}
+
+.trigger_popup_fricc {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+/* { color:#fff; text-decoration: none;}/
+
+
+
+/*********** HEADER ************/
+
+
+header {
+	padding: 10px;
+	background-color: white;
+	color: #972A23;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+header a {
+	color: #972A23;
+	text-decoration: none;
+	padding: 20px;
+}
+
+header a:hover {
+	color: maroon;
+}
+
+h1 {
+	font-size: 50px;
+	margin: 0px;
+	border-bottom: 0px;
+	font-weight: bolder;
+	color: #972A23;
+}
+
+.h1-responsive {
+	font-size: 30px;
+	margin: 0px;
+	border-bottom: 0px;
+	color: DarkSalmon;
+	font-weight: bolder;
+}
+
+.mb-5 {
+	color: DimGray;
+}
+
+h2 {
+    font-size: 50px;
+    border-bottom: 0px;
+}
+
+h3 {
+	margin: 0px;
+	border-bottom: 0px;
+	font-weight: bold;
+	color: DarkSalmon;
+}
+
+h4 {
+	color: white;
+	text-align:center;
+	font-weight: bold;
+}
+
+h5 {
+	font-size:20px;
+	color: white;
+	text-align:center;
+	font-weight: bold;
+}
+
+.desc {
+	font-weight: lighter;
+	font-style: italic;
+	color: gray;
+}
+
+
+
+/*********** CONTACT ************/
+
+form {
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: DarkSalmon;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: Salmon;
+}
+
+
+button {
+  background-color: DarkSalmon;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  animation: pulse
+}
+
+button:hover {
+  background-color: Salmon;
+}
+
+button:active {
+	transform: scale3d(1.1, 1.1, 1.1);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/*********** ANIMATION ************/
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+/*********** FOOTER ************/
+footer {
+	text-align: right;
+	padding-top: 100px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	background-color: white;
+	color: #972A23;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+}
+
+.left {
+	text-align: left;
+}
